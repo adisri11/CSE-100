@@ -1,0 +1,39 @@
+# Build artifacts
+*.o
+*.out
+*.exe
+a.exe
+*.obj
+*.dll
+*.so
+*.dylib
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# IDE and editor files
+.vscode/
+.idea/
+.metadata/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Eclipse specific files
+.project
+.cproject
+.settings/
+.classpath
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+result
+
+# Specific test output files that shouldn't be tracked
+# but keeping the test input files
