@@ -30,7 +30,7 @@ int main(){
   }
   
   vector<int> Q(V);
-  vector<bool> full(V, false);
+  vector<bool> value(V, false);
   int start = 0;
   int* parents = new int[V];
   int* keys = new int[V];
@@ -59,12 +59,12 @@ int main(){
     }
     // remove element at index 'u' from Q
     Q.erase(Q.begin() + position);
-    full[u] = true;
+    value[u] = true;
 
     for(int v : G[u]){
 //    for(int i = 0; i < G[u].size(); i++){
 //      int v = G[u][i];
-      if(!full[v] && W[u][v] < keys[v]){
+      if(!value[v] && W[u][v] < keys[v]){
         parents[v] = u;
         keys[v] = W[u][v];
       }
